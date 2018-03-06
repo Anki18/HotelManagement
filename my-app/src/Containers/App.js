@@ -9,11 +9,16 @@ import * as locationActions from "../Actions/hotel-actions";
 class App extends Component {
     render() {
         return (
-            <div>
+            <div className="container form-group">
                 <FormComponent
                     hotel={this.props.hotel}
-                    changeTitle ={this.props.setTitle} />
-                <ResultComponent />
+                    changeTitle ={this.props.setTitle}
+                    selectHotel ={this.props.selectHotel}
+                    fetchData ={this.props.fetchData} />
+                    <hr/>
+                <ResultComponent 
+                    hotel={this.props.hotel}
+                />
             </div>
         );
     }
