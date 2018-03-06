@@ -1,11 +1,5 @@
 import axios from 'axios';
 
-export const setTitle = () => {
-    return {
-        type: "SetTitle"
-    };
-};
-
 export const selectHotel = (value) => {
     return {
         type: "SelectHotel",

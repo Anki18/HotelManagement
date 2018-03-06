@@ -4,8 +4,6 @@ export default function (state = {
     selectedHotel: ''
 }, action) {
     switch (action.type) {
-        case 'SetTitle':
-            return Object.assign({}, state, { title: "Title changed" });
         case 'SelectHotel':
             return Object.assign({}, state, { selectedHotel: action.payload });
         case 'ReceivedData':

@@ -12,7 +12,6 @@ class App extends Component {
             <div className="container form-group">
                 <FormComponent
                     hotel={this.props.hotel}
-                    changeTitle ={this.props.setTitle}
                     selectHotel ={this.props.selectHotel}
                     fetchData ={this.props.fetchData} />
                     <hr/>
